@@ -3,11 +3,12 @@ A Topic Modeling algorithm that extracts the core topics from a text corpus.
 
 Implements the algorithm as described in R. S. Randhawa, P. Jain, and G. Madan, [Topic Modeling Using Distributed Word Embeddings] (http://arxiv.org/abs/1603.04747)
 
+You can try an online working version at http://topic.randhawa.us 
 ## Requirements: 
 Python 2.7, and other packages listed in requirements.txt 
 
 ## Usage
-Download all files into a single folder. The code uses Wikipedia trained vectors to augment its learning on the provided corpus. You can download the files [here](https://www.dropbox.com/sh/e0t37fpq9j226yw/AAD4O_4SZ6jB5jpu9QCiJ9PJa?dl=0) (This is large about 10 Gigs). There are two files: wiki.pkl and wiki.shelve. Place them within a sub-directory called wikimodel.  Then run the following command:
+Download all files into a single folder. The code uses Wikipedia trained vectors to augment its learning on the provided corpus. You can download these files [here](https://www.dropbox.com/sh/e0t37fpq9j226yw/AAD4O_4SZ6jB5jpu9QCiJ9PJa?dl=0): it is about 10 Gigs. Place these files (*wiki.pkl* and *wiki.shelve*) within a sub-directory called wikimodel.  Then run the following command:
 
 ```python
 python vec2topic.py -i corpus.txt -g /path/to/wikimodel/ -K num_topics -s stopwords.txt
